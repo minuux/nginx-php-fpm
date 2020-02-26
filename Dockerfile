@@ -1,4 +1,4 @@
-FROM richarvey/nginx-php-fpm:latest
+FROM richarvey/nginx-php-fpm:1.9.0
 
 ENV timezone Asia/Shanghai
 RUN apk add autoconf gcc libc-dev make tzdata && \
