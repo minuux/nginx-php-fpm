@@ -5,4 +5,5 @@ RUN apk add autoconf gcc libc-dev make tzdata && \
     pecl install mongodb && \
     docker-php-ext-enable mongodb &&\
     cp /usr/share/zoneinfo/${timezone} /etc/localtime && \
-    echo ${timezone} > /etc/timezone
+    echo ${timezone} > /etc/timezone && \
+    apk del autoconf gcc libc-dev make
